@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using PortfolioSite.Components.Components
 
 <PageTitle>Home</PageTitle>
 
@@ -28,18 +29,23 @@
 
 
 <FluentStack tabindex="1" Class="card-section set-colour-bg-3" Orientation="Orientation.Horizontal">
-    <h3>Socials</h3>
+    <FluentStack Orientation="Orientation.Horizontal">
+        <Socials />
+    </FluentStack>
 </FluentStack>
+
 
 <FluentStack tabindex="2" Class="card-section set-colour-bg-2" Orientation="Orientation.Horizontal">
     <h3>Description</h3>
 </FluentStack>
+
 
 <FluentStack tabindex="3" Class="card-section set-colour-bg-3" Orientation="Orientation.Horizontal">
     <h3>Projects</h3>
     <br />
     Literally Github API pipe-in...
 </FluentStack>
+
 
 <FluentStack tabindex="4" Class="card-section set-colour-bg-2" Orientation="Orientation.Horizontal">
     Welcome to your new Fluent Blazor app.
